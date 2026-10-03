@@ -1,26 +1,43 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-dark: #10444a;
+  --bg-darker: #0b3237;
+  --bg-card: #175961;
+  --bg-input: #e6b88d;
+  --gold: #D4AF37;
+  --gold-light: #FFCC00;
+  --gold-dark: #996515;
+  --text-white: #ffffff;
+  --text-dark: #111010;
+  --border-glow: rgba(217, 234, 24, 0.27);
+  --shadow-card: 18px 17px 4px 0px #1e1e1e;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  height: 100%;
+  background-color: #10444a !important;
+  color: white;
+  font-family: 'Cinzel', serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #10444a !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/Coolvetica Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Resetam orice ar putea veni din Tailwind */
+#__next, main {
+  background-color: #10444a;
 }
